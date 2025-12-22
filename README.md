@@ -1,73 +1,120 @@
-# React + TypeScript + Vite
+# Ashish Misal – Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**React | TypeScript | Vite | Tailwind CSS**
 
-Currently, two official plugins are available:
+This is my personal portfolio project built using React (with TypeScript) and Vite.
+It showcases my skills, experience, projects, and contact information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**LIVE URL:** `https://YOUR_DEPLOYED_LINK`
+*(Add your deployed portfolio URL here)*
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Project Overview
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+This portfolio website highlights:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* About Me (who I am and what I do)
+* My Skills and Tech Stack
+* Projects I’ve built
+* Contact section to reach out
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+It is designed to be modern, responsive, and fast using Vite + React.
+
+---
+
+## Features
+
+* Built with **React** and **TypeScript**
+* Powered by **Vite** (fast dev tooling)
+* Styled with **Tailwind CSS**
+* Clean, minimal and professional layout
+* Responsive on desktop and mobile
+
+---
+
+## Tech Stack
+
+This project uses:
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* Optional UI libraries (if included)
+
+---
+
+## Getting Started (Local Development)
+
+To run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/ashishmisal23/portfolio.git
+
+# Navigate to project directory
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open in browser:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+http://localhost:5173
+```
+
+---
+
+## Production (Build)
+
+To generate a production build:
+
+```bash
+npm run build
+```
+
+Preview production build locally:
+
+```bash
+npm run preview
+```
+
+---
+
+## Contributing
+
+Contributions are welcome.
+To contribute:
+
+* Fork the repository
+* Create a new branch (`git checkout -b feature-name`)
+* Make changes
+* Open a Pull Request
+
+---
+
+## Contact
+
+Feel free to contact me:
+
+* **Email:** [ashishmisal23@gmail.com](mailto:ashishmisal23@gmail.com)
+* **LinkedIn:** [https://www.linkedin.com/in/ashish-misal](https://www.linkedin.com/in/ashish-misal)
+* **GitHub:** [https://github.com/ashishmisal23](https://github.com/ashishmisal23) ([GitHub][2])
+
+---
+
+## License
+
+This project is open source — feel free to use or modify it.
+
+---
