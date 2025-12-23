@@ -126,12 +126,13 @@ export const projects = [
     live: "https://www.arjuntech.in/",
   },
   {
-    title: "Covid-19 Dashboard",
-    description: "An interactive dashboard providing real-time global Covid-19 statistics including confirmed cases, recoveries, deaths, and country-wise population insights with data visualizations.",
-    techStack: ["React", "Tailwind CSS", "React Chart.js", "JavaScript"],
-    github: "https://github.com/ashishmisal23/Covid-Dashboard",
-    live: "https://covid-dashboard-ashishmisal.vercel.app/",
+    title: "Covid Vaccine Tracker",
+    description: "A real-time COVID-19 vaccine tracking dashboard that visualizes global vaccination statistics through interactive charts and country-wise insights, helping users monitor vaccination progress worldwide.",
+    techStack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    github: "https://github.com/ashishmisal23/COVID-VACCINE-TRACKER",
+    live: "https://covid-tracker-ashishmisal.vercel.app/",
   },
+
   {
     title: "GitHub Buddy",
     description: "A developer utility application that allows users to search GitHub profiles, explore repositories, and view profile details with a clean UI and debounced search to optimize API usage.",
