@@ -5,7 +5,7 @@ export const personalInfo = {
   location: "Pune, Maharashtra, India",
   email: "ashishmisal23@gmail.com",
   linkedin: "https://www.linkedin.com/in/ashishmisal",
-  github: "https://github.com/ashishmisal",
+  github: "https://github.com/ashishmisal23",
   twitter: "https://x.com/theRealAshish",
   instagram: "https://instagram.com/ashu.misal_",
 };
@@ -112,25 +112,40 @@ export const certifications = [
 
 export const projects = [
   {
-    title: "Real-Time Chat Application",
-    description: "A scalable real-time messaging platform built with WebSocket and Socket.io for instant communication.",
-    techStack: ["React", "Node.js", "Socket.io", "MongoDB"],
-    github: "#",
-    live: "#",
+    title: "News Application (Platform)",
+    description: "A full-stack news publishing platform featuring secure authentication, role-based access control for admins and editors, and dynamic content management with real-time updates for readers.",
+    techStack: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    github: "https://github.com/ashishmisal23/News-App",
+    live: "https://newsapp-ashishmisal.vercel.app/",
   },
   {
-    title: "E-Commerce Platform",
-    description: "Full-featured e-commerce solution with payment integration using Razorpay and microservices architecture.",
-    techStack: ["React", "Express.js", "MongoDB", "Razorpay", "Kafka"],
-    github: "#",
-    live: "#",
+    title: "Arjun Tech Solutions",
+    description: "A responsive and SEO-optimized business website built to enhance brand visibility, showcase services, and drive lead generation with a clean, conversion-focused UI.",
+    techStack: ["React.js", "CSS", "Google Sheets API"],
+    github: "https://github.com/ashishmisal23/Arjun-Tech",
+    live: "https://www.arjuntech.in/",
   },
   {
-    title: "Mobile Expense Tracker",
-    description: "Cross-platform mobile app for tracking personal finances with real-time sync and analytics.",
-    techStack: ["React Native", "Node.js", "MongoDB", "Firebase"],
-    github: "#",
-    live: "#",
+    title: "Covid Vaccine Tracker",
+    description: "A real-time COVID-19 vaccine tracking dashboard that visualizes global vaccination statistics through interactive charts and country-wise insights, helping users monitor vaccination progress worldwide.",
+    techStack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    github: "https://github.com/ashishmisal23/COVID-VACCINE-TRACKER",
+    live: "https://covid-tracker-ashishmisal.vercel.app/",
+  },
+
+  {
+    title: "GitHub Buddy",
+    description: "A developer utility application that allows users to search GitHub profiles, explore repositories, and view profile details with a clean UI and debounced search to optimize API usage.",
+    techStack: ["React", "GitHub API", "JavaScript"],
+    github: "https://github.com/ashishmisal23/GitHub-Buddy",
+    live: "https://githubbuddy-ashishmisal.vercel.app/",
+  },
+  {
+    title: "Brand Homepage",
+    description: "A modern, responsive brand landing page designed to highlight products and services with fast performance, clean layout, and optimized user experience.",
+    techStack: ["React.js", "Vite.js", "JavaScript"],
+    github: "https://github.com/ashishmisal23/Brand-Homepage",
+    live: "https://brand-homepage-ashishmisal.vercel.app/",
   },
 ];
 

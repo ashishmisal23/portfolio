@@ -89,7 +89,7 @@ const Projects = () => {
             className="text-center mt-12"
           >
             <Button variant="outline" size="lg" asChild>
-              <a href="https://github.com/ashishmisal" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/ashishmisal23" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2" size={18} />
                 View More on GitHub
               </a>
