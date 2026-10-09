@@ -46,7 +46,7 @@ const About = () => {
                 <Briefcase className="text-primary" size={22} />
               </div>
               <h3 className="mb-2 text-lg font-semibold">Experience</h3>
-              <p className="text-sm text-muted-foreground">2 years of software development experience</p>
+              <p className="text-sm text-muted-foreground">2+ years of software development experience</p>
             </motion.div>
 
             <motion.div
