@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, ArrowRight, Download, Github, Linkedin, Mail, MapPin } from "lucide-react";
 import { personalInfo } from "@/data/portfolioData";
 import { Button } from "@/components/ui/button";
-import headshot from "@/assets/headshot.png";
+import headshot from "@/assets/headshot-optimized.jpg";
 
 const Hero = () => {
   return (
@@ -95,6 +95,11 @@ const Hero = () => {
                 <img
                   src={headshot}
                   alt="Ashish Misal - Software Engineer"
+                  width={675}
+                  height={900}
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
                   className="h-[520px] w-full object-cover object-center"
                 />
               </div>
