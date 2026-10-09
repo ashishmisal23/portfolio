@@ -1,0 +1,12 @@
+{
+  "name": "Ashish Misal | Software Engineer",
+  "short_name": "Ashish Misal",
+  "description": "Portfolio of Ashish Misal, Software Engineer with 2 years of experience in web and mobile engineering.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

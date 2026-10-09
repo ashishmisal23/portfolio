@@ -1,14 +1,17 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code2, Server, Database, Wrench } from "lucide-react";
+import { Cloud, Code2, Database, Layers3, Server, Wrench } from "lucide-react";
 import { skills } from "@/data/portfolioData";
 
 const skillCategories = [
-  { title: "Frontend", icon: Code2, items: skills.frontend },
-  { title: "Backend", icon: Server, items: skills.backend },
-  { title: "Database", icon: Database, items: skills.database },
-  { title: "Tools & DevOps", icon: Wrench, items: skills.tools },
+  { title: "Programming Languages", icon: Code2, items: skills.programming },
+  { title: "Frontend Development", icon: Layers3, items: skills.frontend },
+  { title: "Backend Development", icon: Server, items: skills.backend },
+  { title: "Databases", icon: Database, items: skills.databases },
+  { title: "Architecture", icon: Layers3, items: skills.architecture },
+  { title: "Cloud & DevOps", icon: Cloud, items: skills.cloudAndDevOps },
+  { title: "Development Tools", icon: Wrench, items: skills.tools },
 ];
 
 const Skills = () => {
@@ -23,34 +26,34 @@ const Skills = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold font-mono mb-2 text-center">
-            <span className="text-primary">&lt;</span> Skills <span className="text-primary">/&gt;</span>
-          </h2>
-          <p className="text-muted-foreground text-center mb-12">Technologies I work with</p>
+          <div className="mb-12 text-center">
+            <p className="text-sm font-medium uppercase tracking-[0.22em] text-primary">Technical Skills</p>
+            <h2 className="mt-3 text-3xl font-bold md:text-4xl">Tools and technologies I use to ship reliable products.</h2>
+          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 xl:grid-cols-3">
             {skillCategories.map((category, categoryIndex) => (
               <motion.div
                 key={category.title}
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
-                className="bg-card border border-border rounded-lg p-6 card-hover"
+                transition={{ duration: 0.5, delay: categoryIndex * 0.08 }}
+                className="rounded-2xl border border-border bg-card p-6 shadow-sm"
               >
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                <div className="mb-6 flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
                     <category.icon className="text-primary" size={20} />
                   </div>
-                  <h3 className="font-mono font-semibold">{category.title}</h3>
+                  <h3 className="text-lg font-semibold">{category.title}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {category.items.map((skill, skillIndex) => (
                     <motion.span
                       key={skill}
-                      initial={{ opacity: 0, scale: 0.8 }}
+                      initial={{ opacity: 0, scale: 0.9 }}
                       animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                      transition={{ duration: 0.3, delay: categoryIndex * 0.1 + skillIndex * 0.05 }}
-                      className="px-3 py-1.5 bg-secondary text-secondary-foreground text-xs font-medium rounded-md hover:bg-primary hover:text-primary-foreground transition-colors duration-300 cursor-default"
+                      transition={{ duration: 0.3, delay: categoryIndex * 0.08 + skillIndex * 0.04 }}
+                      className="rounded-full border border-border bg-secondary px-3 py-1.5 text-xs font-medium text-secondary-foreground"
                     >
                       {skill}
                     </motion.span>

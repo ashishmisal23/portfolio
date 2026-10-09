@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { MapPin, Briefcase, GraduationCap } from "lucide-react";
+import { Briefcase, GraduationCap, MapPin } from "lucide-react";
 import { personalInfo, summary } from "@/data/portfolioData";
 
 const About = () => {
@@ -15,51 +15,51 @@ const About = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto"
+          className="mx-auto max-w-5xl"
         >
-          <h2 className="text-3xl md:text-4xl font-bold font-mono mb-2 text-center">
-            <span className="text-primary">&lt;</span> About Me <span className="text-primary">/&gt;</span>
-          </h2>
-          <p className="text-muted-foreground text-center mb-12">Get to know me better</p>
+          <div className="mb-10 text-center">
+            <p className="text-sm font-medium uppercase tracking-[0.24em] text-primary">About Me</p>
+            <h2 className="mt-3 text-3xl font-bold md:text-4xl">Software engineer focused on building what users rely on.</h2>
+          </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="mb-12 grid gap-6 md:grid-cols-3">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-card border border-border rounded-lg p-6 text-center card-hover"
+              className="rounded-2xl border border-border bg-card p-6 shadow-sm"
             >
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <MapPin className="text-primary" size={24} />
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
+                <MapPin className="text-primary" size={22} />
               </div>
-              <h3 className="font-mono font-semibold mb-2">Location</h3>
-              <p className="text-muted-foreground text-sm">{personalInfo.location}</p>
+              <h3 className="mb-2 text-lg font-semibold">Location</h3>
+              <p className="text-sm text-muted-foreground">{personalInfo.location}</p>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-card border border-border rounded-lg p-6 text-center card-hover"
+              className="rounded-2xl border border-border bg-card p-6 shadow-sm"
             >
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Briefcase className="text-primary" size={24} />
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
+                <Briefcase className="text-primary" size={22} />
               </div>
-              <h3 className="font-mono font-semibold mb-2">Experience</h3>
-              <p className="text-muted-foreground text-sm">1+ Years Professional</p>
+              <h3 className="mb-2 text-lg font-semibold">Experience</h3>
+              <p className="text-sm text-muted-foreground">2 years of software development experience</p>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="bg-card border border-border rounded-lg p-6 text-center card-hover"
+              className="rounded-2xl border border-border bg-card p-6 shadow-sm"
             >
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <GraduationCap className="text-primary" size={24} />
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
+                <GraduationCap className="text-primary" size={22} />
               </div>
-              <h3 className="font-mono font-semibold mb-2">Education</h3>
-              <p className="text-muted-foreground text-sm">B.Tech in CS</p>
+              <h3 className="mb-2 text-lg font-semibold">Education</h3>
+              <p className="text-sm text-muted-foreground">B.Tech in Computer Science Engineering</p>
             </motion.div>
           </div>
 
@@ -67,11 +67,9 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="bg-card border border-border rounded-lg p-8 glow-border"
+            className="rounded-3xl border border-border bg-card p-8 shadow-sm"
           >
-            <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
-              {summary}
-            </p>
+            <p className="text-base leading-8 text-muted-foreground md:text-lg">{summary}</p>
           </motion.div>
         </motion.div>
       </div>
