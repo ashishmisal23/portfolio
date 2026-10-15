@@ -10,7 +10,7 @@ export const personalInfo = {
   github: "https://github.com/ashishmisal23",
   twitter: "https://x.com/theRealAshish",
   instagram: "https://instagram.com/ashu.misal_",
-  resume: "/Ashish_Misal_Full_Stack_2_Year_Resume.pdf",
+  resume: "../../public/Ashish_Misal_Full_Stack_2_Year_Resume.pdf",
 };
 
 export const summary = `Software Engineer with 2+ years of experience developing scalable web and mobile applications using JavaScript, TypeScript, React.js, Angular, React Native, Node.js, Express.js, and MongoDB. Experienced in building RESTful APIs, authentication systems, microservices, real-time applications, Redis caching, Kafka, Docker, and CI/CD. Strong problem-solving skills with a focus on performance optimization, scalable architecture, and production-ready application development.`;
